@@ -35,6 +35,7 @@
             jQuery('#company-description').toggle('show');
             jQuery('#company-footer').toggle('hide');
             jQuery('#student-footer').toggle('show');
+            jQuery('#mailchimp').toggle('hide');
         });
         jQuery('#student').on('click', function(event) {
             jQuery('#company-name').toggle('hide');
@@ -43,6 +44,7 @@
             jQuery('#company-description').toggle('hide');
             jQuery('#company-footer').toggle('show');
             jQuery('#student-footer').toggle('hide');
+            jQuery('#mailchimp').toggle('show');
         });
     });
 </script>
@@ -65,7 +67,7 @@
     }
 
     header {
-        padding: 6vh 0;
+        padding: 0;
     }
 
     footer.footer {
@@ -120,6 +122,7 @@
         padding-left: 20%;
         padding-right: 20%;
         margin-bottom: 1.5em;
+        padding-top: 30px;
     }
 
     .footer-text {
@@ -267,7 +270,7 @@
     }
 </style>
 
-<nav class="navbar navbar-custom wow fadeIn" data-wow-delay=".5s" role="navigation">
+<nav class="navbar navbar-custom wow fadeIn" data-wow-delay=".5s" role="navigation" style="margin-bottom: 0 !important;">
   <div class="container">
     <div class="navbar-header navbar-right">
         <ul class="nav">
@@ -286,7 +289,7 @@
         <div id="company-header" class="header-text wow fadeIn" data-wow-delay=".5s">Become a sponsor</div>
         <div id="company-description"class="content wow fadeIn" data-wow-delay=".5s">
             LA Hacks is the best opportunity for companies to recruit top collegiate talents from along the West Coast
-            and across the country. To learn more, enter your information below or email us at <a class="link email" href="mailto:info@lahacks.com">info@lahacks.com</a>.
+            and across the country. To learn more, email us at <a class="link email" href="mailto:info@lahacks.com">info@lahacks.com</a>.
         </div>
 
         <!-- Begin MailChimp Signup Form -->
