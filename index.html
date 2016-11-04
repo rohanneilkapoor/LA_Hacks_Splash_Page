@@ -46,6 +46,10 @@
             jQuery('#student-footer').toggle('hide');
             jQuery('#mailchimp').toggle('show');
         });
+
+        var gifSource = $('#logo').attr('src'); //get the source in the var
+        $('#logo').attr('src', ""); //erase the source
+        $('#logo').attr('src', gifSource+"?"+new Date().getTime()); //add the date to the source of the image... :-)
     });
 </script>
 <style>
@@ -284,7 +288,7 @@
 
 <header>
     <div class="container text-center">
-        <img src="logo_vid3.gif">
+        <img id="logo" src="logo_vid3.gif">
         <div id="original-header" class="header-text wow fadeIn" data-wow-delay=".5s">You don't want to miss this</div>
         <div id="company-header" class="header-text wow fadeIn" data-wow-delay=".5s">Become a sponsor</div>
         <div id="company-description"class="content wow fadeIn" data-wow-delay=".5s">
